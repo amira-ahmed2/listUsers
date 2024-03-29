@@ -1,0 +1,18 @@
+<div class="container pt-5">
+  <div
+    class="card justify-content-center align-items-center border-0"
+    (click)="viewUserDetail(searchData.id)"
+  >
+    <img
+      [src]="searchData.avatar"
+      alt="User Avatar"
+      class="card-img-top "
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">
+        {{ searchData.first_name }} {{ searchData.last_name }}
+      </h5>
+      <p class="card-text">{{ searchData.email }}</p>
+    </div>
+  </div>
+</div>

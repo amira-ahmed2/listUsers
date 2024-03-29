@@ -1,0 +1,29 @@
+
+
+<div class="container  pt-5 ">
+    <div *ngIf="!user; else loading" class="pt-5  d-flex justify-content-center align-items-center">
+        <mat-spinner></mat-spinner>
+    </div>
+    <ng-template #loading>
+        <div class="card mb-3 border-0 ">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <img [src]="user.avatar" class="img-fluid rounded-circle  h-100 " alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Firstname: {{ user.first_name }}</h5>
+                  <h5 class="card-title">Lastname: {{ user.last_name }}</h5>
+
+                  <p class="card-text">Email: {{ user.email }}</p>
+                  <button type="button" class="btn btn-outline-main px-0" (click)="goBack()"> <span aria-hidden="true">&laquo;</span> back</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+    
+    </ng-template>   
+</div>

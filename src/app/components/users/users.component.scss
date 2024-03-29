@@ -1,0 +1,46 @@
+img {
+    width: 100px;
+    /* Adjust image size as needed */
+    border-radius: 50%;
+    /* Make the image round */
+
+
+}
+
+.card-title,
+img {
+    cursor: pointer;
+}
+
+.card-title:hover {
+    color: #3f51b5;
+}
+
+.page-link {
+    color: #000000d2; /* لون النص */
+    background-color: #fff; /* لون الخلفية */
+    border: 1px solid #dee2e6; /* لون الحدود */
+  }
+  
+  .page-link:hover {
+    color: #3f51b5 !important; /* لون النص عند التحوي على الزر */
+    text-decoration: none !important; /* إزالة تأثير التحويل */
+    background-color: #e9ecef !important; /* لون الخلفية عند التحوي على الزر */
+    border-color: #dee2e6 !important; /* لون الحدود عند التحوي على الزر */
+  }
+  
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff; /* لون النص للصفحة النشطة */
+    background-color: #3f51b5; /* لون الخلفية للصفحة النشطة */
+    border-color: #3f51b5; /* لون الحدود للصفحة النشطة */
+  }
+  
+  .page-item.disabled .page-link {
+    color: #000000d2; /* لون النص للصفحة المعطلة */
+    pointer-events: none; /* تعطيل النقر */
+    cursor: auto; /* تغيير شكل المؤشر */
+    background-color: #fff; /* لون الخلفية للصفحة المعطلة */
+    border-color: #dee2e6; /* لون الحدود للصفحة المعطلة */
+  }
+  
