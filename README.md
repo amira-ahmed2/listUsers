@@ -1,4 +1,5 @@
 # Users
+A project that displays users and their information, and we can search using the ID
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
